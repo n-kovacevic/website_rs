@@ -1,0 +1,33 @@
+{
+	"projects":[{
+		"img": "serverswitcher.png",
+		"title": "Server Switcher",
+		"alt": "Server Switcher",
+		"link": "https://n-kovacevic.github.io/Server-Switcher/"
+	},{
+		"img": "iswd.jpg",
+		"title": "Clip Planet",
+		"alt": "clip-planet",
+		"link": "https://n-kovacevic.github.io/Clip-Planet/"
+	},
+	{
+		"img": "chat.jpg",
+		"title": "Chat for osu!",
+		"alt": "chat for osu",
+		"link": "https://bitbucket.org/nkg5/chat-for-osu"
+	},
+	{
+		"img": "fotd.png",
+		"title": "Fear of the Dark",
+		"alt": "fear-of-the-dark",
+		"link": "https://n-kovacevic.github.io/Fear-of-the-Dark/"
+	},
+	{
+		"img": "fsorter.png",
+		"title": "File Sorter",
+		"alt": "file sorter",
+		"link": "https://n-kovacevic.github.io/FileSorter/"
+	}
+]
+
+}

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Diplomirao sam informatiku i radim kao softverski inženjer u kompaniji IGT Global Services Limited. U slobodno vreme radim na ličnim projektima.">
-  <meta name="theme-color" content="#f5f3eb">
+  <meta name="description" content="Softverski inženjer sa završenim osnovnim studijama primenjene informatike i iskustvom u upravljanju izdanjima softvera, razvoju serverskih aplikacija i vođenju DevOps tima.">
+  <meta name="theme-color" content="#f7f7f4">
   <title>Nikola Kovačević · Softverski inženjer</title>
   <link rel="canonical" href="https://nkovacevic.rs/">
   <link rel="alternate" hreflang="en" href="https://nkovacevic.com/">
@@ -16,7 +16,7 @@
   <a class="skip" href="#main">Pređi na sadržaj</a>
   <header>
     <div class="wrap bar">
-      <a class="brand" href="#title" aria-label="Početna">Nikola Kovačević</a>
+      <a class="brand" href="#title" aria-label="Početna"><span aria-hidden="true">NK<span class="brand-dot">.</span></span></a>
       <nav aria-label="Glavna navigacija">
         <a href="#about">O meni</a>
         <a href="#projects">Projekti</a>
@@ -32,14 +32,34 @@
           <p class="eyebrow">Lični sajt</p>
           <h1>Nikola Kovačević</h1>
           <p class="lede">Softverski inženjer</p>
+          <p class="intro">Razvijam softver, a u slobodno vreme radim na ličnim projektima.</p>
+          <div class="hero-actions">
+            <a class="button" href="#projects">Pogledaj projekte <span aria-hidden="true">↘</span></a>
+            <a class="button button-outline" href="#contact">Kontaktiraj me <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <img class="portrait" src="res/avatar.png" alt="">
+        <div class="portrait-panel">
+          <img class="portrait" src="res/portrait.jpg" alt="Nikola Kovačević" width="768" height="1024">
+        </div>
       </div>
     </div>
     <section class="about" id="about">
       <div class="wrap">
         <h2>O meni</h2>
-        <p>Diplomirao sam informatiku i radim kao softverski inženjer u kompaniji IGT Global Services Limited. U slobodno vreme radim na ličnim projektima.</p>
+        <dl class="about-details">
+          <div>
+            <dt>Obrazovanje</dt>
+            <dd>Osnovne studije primenjene informatike</dd>
+          </div>
+          <div>
+            <dt>Radno iskustvo</dt>
+            <dd><span lang="en">Release Engineer</span>, <span lang="en">Backend Developer</span>, vođa DevOps tima</dd>
+          </div>
+          <div>
+            <dt>Interesovanja</dt>
+            <dd>Razvoj softvera i rad sa mikrokontrolerima (Arduino i ESP32)</dd>
+          </div>
+        </dl>
       </div>
     </section>
     <section id="projects">
@@ -48,23 +68,23 @@
         <ul class="cards">
           <li><a class="card" href="https://n-kovacevic.github.io/Server-Switcher/">
             <img src="res/projects/serverswitcher.png" alt="" loading="lazy">
-            <span>Server Switcher</span>
+            <span><small aria-hidden="true">01</small>Server Switcher</span>
           </a></li>
           <li><a class="card" href="https://n-kovacevic.github.io/Clip-Planet/">
             <img src="res/projects/iswd.jpg" alt="" loading="lazy">
-            <span>Clip Planet</span>
+            <span><small aria-hidden="true">02</small>Clip Planet</span>
           </a></li>
           <li><a class="card" href="https://bitbucket.org/nkg5/chat-for-osu">
             <img src="res/projects/chat.jpg" alt="" loading="lazy">
-            <span>Chat for osu!</span>
+            <span><small aria-hidden="true">03</small>Chat for osu!</span>
           </a></li>
           <li><a class="card" href="https://n-kovacevic.github.io/Fear-of-the-Dark/">
             <img src="res/projects/fotd.png" alt="" loading="lazy">
-            <span>Fear of the Dark</span>
+            <span><small aria-hidden="true">04</small>Fear of the Dark</span>
           </a></li>
           <li><a class="card" href="https://n-kovacevic.github.io/FileSorter/">
             <img src="res/projects/fsorter.png" alt="" loading="lazy">
-            <span>File Sorter</span>
+            <span><small aria-hidden="true">05</small>File Sorter</span>
           </a></li>
         </ul>
       </div>
@@ -73,15 +93,28 @@
       <div class="wrap">
         <h2>Kontakt</h2>
         <p>Pronađite me na mrežama ili mi pošaljite imejl.</p>
-        <p><a href="mailto:contact@nkovacevic.com">contact@nkovacevic.com</a></p>
+        <div class="email-card">
+          <svg class="email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+          </svg>
+          <div>
+            <p id="email-address">contact@nkovacevic.com</p>
+            <div class="email-actions">
+              <a class="button" href="mailto:contact@nkovacevic.com">Pošalji imejl <span aria-hidden="true">↗</span></a>
+              <button class="button button-outline" id="copy-email" type="button" data-success="Imejl adresa je kopirana." data-error="Kopiranje nije uspelo. Označi adresu i kopiraj je ručno." hidden>Kopiraj adresu</button>
+            </div>
+          </div>
+        </div>
+        <p id="email-status" role="status"></p>
         <ul class="links">
-          <li><a href="https://github.com/n-kovacevic">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/nikola-kova%C4%8Devi%C4%87-bb545310a">LinkedIn</a></li>
-          <li><a href="https://facebook.com/nkg5.rs">Facebook</a></li>
+          <li><a href="https://github.com/n-kovacevic"><img src="res/social-github.svg" width="24" height="24" alt="">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/nikola-kova%C4%8Devi%C4%87-bb545310a"><img src="res/social-linkedin.svg" width="24" height="24" alt="">LinkedIn</a></li>
         </ul>
       </div>
     </section>
   </main>
   <footer><div class="wrap">Nikola Kovačević</div></footer>
+  <script src="site.js" defer></script>
 </body>
 </html>
